@@ -11,7 +11,7 @@ end
 
 # Extract Packer
 execute 'Extract Packer' do
-  command "unzip #{node['packer']['local']} -d /usr/local/bin"
+  command "unzip -o #{node['packer']['local']} -d /usr/local/bin"
 end
 
 # Remove downloaded archive
