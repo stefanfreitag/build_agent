@@ -1,11 +1,5 @@
-# build_agent CHANGELOG
+# CHANGELOG
 
-This file is used to list changes made in each version of the build_agent cookbook.
+## 0.1.0 Initial release
 
-# 0.1.0
-
-Initial release.
-
-- change 0
-- change 1
-
+## 0.1.1 Major rewrite of Packer and Docker parts

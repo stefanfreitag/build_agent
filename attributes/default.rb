@@ -2,19 +2,29 @@
 # Cookbook:: build_agent
 # Recipe:: default
 #
-# Copyright:: 2018, The Authors, All Rights Reserved.
 
+##########
+# Packer #
+##########
 
-# Packer version to install
-default['packer']['version'] = '1.2.5'
+# Version to download and install
+default['build_agent']['packer']['version'] = '1.2.5'
 
-# Download URL for Grafana
-default['packer']['url'] = "https://releases.hashicorp.com/packer/#{node['packer']['version']}/packer_#{node['packer']['version']}_linux_amd64.zip"
+# Download URL
+default['build_agent']['packer']['base_url'] = 'https://releases.hashicorp.com/packer/'
 
-# Name of the stored archive on local system
-default['packer']['local'] = "/tmp/packer_#{node['packer']['version']}_linux_amd64.zip"
+# Temporary directory for storing the download
+default['build_agent']['packer']['tmp'] = '/tmp/'
 
-default['docker']['url'] = 'https://get.docker.com/rpm/1.7.0/centos-6/RPMS/x86_64/docker-engine-1.7.0-1.el6.x86_64.rpm'
+##########
+# Docker #
+##########
 
-# Name of the stored archive on local system
-default['docker']['local'] = '/tmp/docker-engine-1.7.0-1.el6.x86_64.rpm'
+# Download URL
+default['build_agent']['docker']['base_url'] = 'https://get.docker.com/rpm/1.7.0/centos-6/RPMS/x86_64/'
+
+# Name of file to download
+default['build_agent']['docker']['filename'] = 'docker-engine-1.7.0-1.el6.x86_64.rpm'
+
+# Temporary directory for storing the download
+default['build_agent']['docker']['tmp'] = '/tmp/'

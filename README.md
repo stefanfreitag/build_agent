@@ -1,4 +1,5 @@
-# build_agent
+# build_agent Cookbook
 
-TODO: Enter the cookbook description here.
+Installs Docker and Packer.
 
+Tested on CentOS 6.9, 64 Bit
