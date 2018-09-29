@@ -2,7 +2,7 @@
 # Cookbook:: build_agent
 # Recipe:: docker
 #
-# Copyright:: 2018, The Authors, All Rights Reserved.
+# Copyright:: 2018, Stefan Freitag, Apache-2.0
 
 docker_url = node['build_agent']['docker']['base_url'] + node['build_agent']['docker']['filename']
 docker_local_tmpfile = node['build_agent']['docker']['tmp'] + node['build_agent']['docker']['filename']

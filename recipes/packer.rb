@@ -2,6 +2,7 @@
 # Cookbook:: build_agent
 # Recipe:: packer
 #
+# Copyright:: 2018, Stefan Freitag, Apache-2.0
 
 packer_base_url = node['build_agent']['packer']['base_url']
 packer_version = node['build_agent']['packer']['version']
