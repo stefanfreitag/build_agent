@@ -4,7 +4,11 @@
 #
 # Copyright:: 2018, Stefan Freitag, Apache-2.0
 
-%w[dos2unix screen unzip].each do |p|
+package 'epel-release' do
+  action :install
+end
+
+%w[dos2unix nodejs npm screen unzip].each do |p|
   package p do
     action :install
   end

@@ -6,6 +6,14 @@ describe package('dos2unix') do
   it { should be_installed }
 end
 
+describe package('nodejs') do
+  it { should be_installed }
+end
+
+describe package('npm') do
+  it { should be_installed }
+end
+
 describe package('screen') do
   it { should be_installed }
 end
